@@ -1,0 +1,261 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 3px solid red !important; */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-width: 500px;
+}
+
+
+@media (max-width: 800px) {
+    body {
+        text-align: center;
+    }
+  }
+
+section {
+    height: auto;
+    padding: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0f2f5;
+
+}
+
+@media (max-width: 800px) {
+    section {
+      flex-direction: column;
+    }
+  }
+
+#logo {
+    display: flex;
+    align-self: start;  
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 1rem;
+    
+}
+
+#logo > img{
+    width: 55%;
+    height: auto;
+    margin-left:-6%;
+    margin-bottom: -2%;     
+}
+
+@media (max-width: 800px) {
+    #logo > img {
+        margin-left:-6%;
+    }
+  }
+
+#logo > p {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+#form {
+    margin: 1rem;
+}
+
+form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    border-radius: 2%;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+form > input {
+    border: 1px solid #f0f2f5;
+    padding: 4%;
+    margin: 3%;
+    font-size: 1rem;
+}
+
+form > input[type=submit]{
+    background-color: #1877f2;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+} 
+
+form > input[type=submit]:hover {
+    cursor: pointer;
+}
+
+form > a {
+    text-align: center;
+    display: block;
+    margin-bottom: 2%;
+    text-decoration: none;
+    color: #1877f2;
+    font-size: 0.9rem;
+}
+
+hr {
+    border-top: 0 solid #dadde1;
+}
+
+form > button {
+    margin: 5% auto;
+    background-color: #42b72a;
+    padding: 5%;
+    color: white;
+    border: none;
+    font-weight: bolder;
+    font-size: 1rem;
+    border-radius: 4px;
+    width: fit-content;
+
+}
+
+form > button:hover {
+    cursor: pointer;
+}
+
+#form > p {
+    margin-top: 5%;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+footer {
+    width: 80%;
+    background-color: white;
+    padding: 1% 0;
+    /* text-align: center; */
+    margin: 0 auto;
+}
+
+footer > p {
+    color: gray;
+    font-size: 0.8rem;
+    padding: 0.3rem;
+}
+
+
+
+ul {
+    list-style-type: none;
+    padding: 1% 0;
+}
+
+li {
+    display: inline;
+    color: gray;
+    font-size: 0.8rem;
+    padding: 0.3rem;
+}
+
+li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+#model {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding: 1rem;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.4); 
+}
+
+#model-content {
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    background-color: white;
+    margin: auto;
+    padding: 1.2rem;
+    border: none;
+    width: 35%;
+}
+
+@media (max-width: 800px) {
+    #model-content {
+        width: 80%;
+    }
+  }
+
+#close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#model-content > h1 {
+    padding: 1% 0;
+    font-weight: bold;
+}
+
+#model-content > p {
+    padding: 1% 0;
+    color: gray;
+}
+
+#model-content > div {
+    display: flex;
+    flex-direction: column;
+}
+
+#model-content > div > p {
+    text-align: left;
+    color: gray;
+}
+
+#model-content > div > input {
+    margin: 1%;
+    padding: 2%;
+    font-size: medium;
+    background-color: #f5f6f7;
+    border: 1px solid #aaaaaa;
+    border-radius: 3px;
+}
+
+
+
+.blue {
+    color: #1877f2;
+}
+
+.blue:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#model-content > button {
+    background-color: #00a400;
+    width: fit-content;
+    border: none;
+    padding: 2%;
+    border-radius: 3px;
+    color: white;
+    font-weight: bolder;
+    font-size: medium;
+}
+#model-content > button:hover {
+    cursor: pointer;
+}
